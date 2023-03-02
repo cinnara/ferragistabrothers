@@ -1,0 +1,239 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    background:rgba(240, 237, 237, 0.925);
+    margin-top:100px;
+    margin-left:15%;
+    margin-right:15%;
+    text-align:center;
+    color: rgb(253, 253, 253);
+            
+}
+.contato{
+    margin-top: 10% !important;
+    margin-left: -21.5% !important;
+    margin-right: -21.5% !important;
+    padding-left: 15% !important;
+    padding-right: 15% !important;
+}
+
+.estilo{ /*identificação da classe div de estilo*/
+    background-color:rgb(71, 95, 231); 
+    border-radius:0px; /*raio da borda*/
+    
+}
+
+.rodape {
+    position:fixed;
+    top: 85%;
+    left: 80%;
+    z-index: 1;
+
+    width: 60px;
+    height: 60px;
+    right: 40px;
+    margin: 15px;
+    text-align:center;
+    font-size: 30px;
+}
+
+.rodapezap {
+    position:fixed;
+    top: 85%;
+    left: 80%;
+    z-index: 1;
+
+    width: 60px;
+    height: 60px;
+    right: 40px;
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.fa-whatsapp{
+
+    margin-top: 16px;
+ 
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color:blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px 0 70px;
+    flex-wrap: wrap; 
+}
+
+nav .Logo{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 15%;
+
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none; /*tirar o sublinhado*/
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #e7442e;
+}
+nav .menu-btn i{
+    color: aqua;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgba(5, 5, 5, 0.863);
+        height: 100vh;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        font-size: 23px;
+        text-align: left;
+    }
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #e7442e;
+    }
+
+    nav .Logo{
+        
+        margin-left: -20%;
+    }
+    .body{
+    margin-left: 0%;
+    margin-right: 0%;
+    }
+
+    .estilo{ /*identificação da classe div de estilo*/
+        background-color:rgb(70, 94, 231); 
+        border-radius:0px; /*raio da borda*/
+        height: 100%;
+        right: 100%;
+        
+                              
+    }
+
+    .valores{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+   
+    
+    .produto{
+        width: 40% !important; 
+    }
+    
+    .departamento{
+        flex-wrap:wrap;
+                  
+    }
+    
+
+    .pagina{
+    background: rgba(240, 237, 237, 0.925);
+    justify-content: center !important;
+     
+    }
+   
+    .contato{
+        margin-top: 0%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+    .logo{
+        width: 90% !important;
+    }
+
+}
+
+h1{ 
+    color: rgb(254, 219, 67);
+    text-align: center;
+    
+}
+
+
+.produtos{
+    display: flex; /*fica lado a lado*/
+    flex-wrap:wrap;  /*envolver em outras linhas*/ 
+    justify-content: space-around; /*distribuido ao redor */
+    
+    
+}
+
+.produto p{
+    background-color: #e7442e;
+    color: rgb(244, 247, 63);
+    padding: 5px;
+    font-weight: bold; /*letra em negrito*/
+    
+}
+
+.produto{
+    
+    margin-bottom: 20px; /*margin inferior*/
+    margin-right: 3px;
+    margin-top: 50px;
+    cursor: pointer; /*mudar o curso do mouse para uma mãozinha*/
+    height: 20%;
+    width: 20%;
+}
+
+.pagina{
+    background: rgba(240, 237, 237, 0.925);
+    justify-content: center !important;
+ 
+}
+.pagination{
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
