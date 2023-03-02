@@ -34,7 +34,7 @@ html{
 .rodape {
     position:fixed;
     top: 85%;
-    left: 80%;
+    left: 60%;
     z-index: 1;
 
     width: 60px;
@@ -48,7 +48,7 @@ html{
 .rodapezap {
     position:fixed;
     top: 85%;
-    left: 80%;
+    left: 60%;
     z-index: 1;
 
     width: 60px;
