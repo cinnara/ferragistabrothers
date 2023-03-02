@@ -34,7 +34,7 @@ html{
 .rodape {
     position:fixed;
     top: 85%;
-    left: 60%;
+    left: 65%;
     z-index: 1;
 
     width: 60px;
@@ -48,7 +48,7 @@ html{
 .rodapezap {
     position:fixed;
     top: 85%;
-    left: 60%;
+    left: 65%;
     z-index: 1;
 
     width: 60px;
@@ -71,7 +71,7 @@ nav{
     background-color:blue;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px 0 70px;
+    padding: 0 20px 0 70px;
     flex-wrap: wrap; 
 }
 
