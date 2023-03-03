@@ -24,11 +24,16 @@ html{
     border-radius:0px; /*raio da borda*/
     
 }
+.contato{
+    margin-left: -21.5% !important;
+    margin-right: -21.5% !important;
+}
+
 
 .rodape {
     position:fixed;
     top: 85%;
-    left: 65%;
+    left: 90%;
     z-index: 1;
 
     width: 60px;
@@ -42,7 +47,7 @@ html{
 .rodapezap {
     position:fixed;
     top: 85%;
-    left: 65%;
+    left: 90%;
     z-index: 1;
 
     width: 60px;
@@ -73,7 +78,6 @@ nav .Logo{
     color: white;
     font-size: 15px;
     font-weight: 600;
-    margin-left: 15%;
 
 }
 nav ul{
@@ -129,14 +133,23 @@ nav .menu-btn i{
         background: none;
         color: #e7442e;
     }
-
+    .rodape{
+        left: 75%;
+    }
+    .rodapezap{
+        left: 75%;
+    }
+    .contato{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
+    }
     nav .Logo{
         
         margin-left: -20%;
     }
     .body{
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
     }
 
     .estilo{ /*identificação da classe div de estilo*/
@@ -146,6 +159,11 @@ nav .menu-btn i{
         right: 100%;
         
                               
+    }
+    .marca{
+        color: black; 
+        margin-left:-20%;
+        margin-right: 0% !important;
     }
 
     .valores{
@@ -183,7 +201,11 @@ h1{
     
 }
 
-
+.marca{
+    color: black; 
+    margin-left: -20%;
+    margin-right: -20%;
+}
 .produtos{
     display: flex; /*fica lado a lado*/
     flex-wrap:wrap;  /*envolver em outras linhas*/ 
