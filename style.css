@@ -133,6 +133,11 @@ nav .menu-btn i{
         background: none;
         color: #e7442e;
     }
+
+    .carouselslide{
+        margin-left:0% !important;
+        margin-right:0% !important;
+    }
     .rodape{
         left: 75%;
     }
@@ -159,6 +164,11 @@ nav .menu-btn i{
         right: 100%;
         
                               
+    }
+    .fachada{
+        margin-top: 1%;
+        width: 120%;
+        
     }
     .marca{
         color: black; 
@@ -206,6 +216,17 @@ h1{
     margin-left: -20%;
     margin-right: -20%;
 }
+
+.fachada{
+    margin-top: 1%;
+    margin-left:-21.5%;
+}
+
+.carouselslide{
+    margin-left:-21.5% ;
+    margin-right:-21.5% ;
+}
+
 .produtos{
     display: flex; /*fica lado a lado*/
     flex-wrap:wrap;  /*envolver em outras linhas*/ 
