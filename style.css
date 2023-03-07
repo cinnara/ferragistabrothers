@@ -133,7 +133,6 @@ nav .menu-btn i{
         background: none;
         color: #e7442e;
     }
-
     .carouselslide{
         margin-left:0% !important;
         margin-right:0% !important;
@@ -156,7 +155,6 @@ nav .menu-btn i{
     margin-left: 0% !important;
     margin-right: 0% !important;
     }
-
     .estilo{ /*identificação da classe div de estilo*/
         background-color:rgb(70, 94, 231); 
         border-radius:0px; /*raio da borda*/
@@ -175,34 +173,54 @@ nav .menu-btn i{
         margin-left:-20%;
         margin-right: 0% !important;
     }
-
     .valores{
         flex-wrap: wrap;
         width: 100%;
     }
-   
-    
     .produto{
         width: 40% !important; 
     }
-    
     .departamento{
         flex-wrap:wrap;
                   
     }
-    
-
     .pagina{
     background: rgba(240, 237, 237, 0.925);
     justify-content: center !important;
      
     }
-   
-    
     .logo{
         width: 90% !important;
     }
+    .end{
+        margin-left: 7% !important;
+    }
+    .ender{
+        margin-left: -2.1% !important;
+    }
+    .margin{
+        font-size:100%;
+        padding: 7% !important;
+    }
 
+}
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+.margin{
+    --bs-gutter-x: 0rem !important;
+    font-size:100%;
+    text-align:justify;
+    padding: 3% ;
+}
+.end{
+    text-align:left;
+    margin-top: -2%;
+    margin-left: 3.3%;
+}
+.ender{
+    text-align:left;
+    margin-left: -1%;
 }
 
 h1{ 
@@ -262,9 +280,6 @@ h1{
     justify-content: center;
 }
 
-p{
-    text-align: center;
-    margin-top: 50px;
 
-}
+
 
