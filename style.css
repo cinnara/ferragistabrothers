@@ -29,6 +29,11 @@ html{
     margin-right: -21.5% !important;
     padding: 2%;
 }
+.logoBellya{
+    width:1.5%;
+    height:1.5%;
+}
+
 
 
 .rodape {
@@ -110,6 +115,10 @@ nav .menu-btn i{
     display: none;
 }
 @media (max-width: 920px){
+    .logoBellya{
+        width:5%;
+        height:5%;
+    }
     nav .menu-btn i{
         display: block;
     }
