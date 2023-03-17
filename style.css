@@ -1,428 +1,295 @@
-@import url('https://fonts.googleapis.com/css2? family= Arimo & family= Noto+Serif+Lao & display=swap');
-@media (max-width: 920px){
-    html{
-        scroll-behavior: smooth;
-    }
-    *{
-        padding: 0%;
-        margin: 0% ;
-        text-decoration: none;
-        list-style: none;
-    }
-    
-    .logo{
-        margin-top: 2%;
-    }
-    .logoimg{
-        width: 70px; 
-        margin-left: 0%;  
-    }
-    .menu{
-        display: flex;
-        gap: 10px !important;
-        
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.body{
+    background:rgba(240, 237, 237, 0.925);
+    margin-top:100px;
+    margin-left:15%;
+    margin-right:15%;
+    text-align:center;
+    color: rgb(253, 253, 253);
             
-    }
-    body{
-        background:linear-gradient(68.15deg, #1f4864  16.62%, #bc9072c2 85.61%);
-    }
-    nav a{
-        color:#F1F1F2;
-        font-family: 'Noto Serif Lao', serif;
-        font-size: 15px !important;
-        
-    }
-    .navegacao{
-        display: flex;
-        justify-content:space-around;
-        align-items: center;
-        padding: 1%;
-        gap: 10px !important;
+}
+
+
+.estilo{ /*identificação da classe div de estilo*/
+    background-color:rgb(71, 95, 231); 
+    border-radius:0px; /*raio da borda*/
     
+}
+.contato{
+    margin-left: -21.5% !important;
+    margin-right: -21.5% !important;
+    padding: 2%;
+}
+.logoBellya{
+    width:1.5%;
+    height:1.5%;
+}
+
+
+
+.rodape {
+    position:fixed;
+    top: 85%;
+    left: 90%;
+    z-index: 1;
+
+    width: 60px;
+    height: 60px;
+    right: 40px;
+    margin: 15px;
+    text-align:center;
+    font-size: 30px;
+}
+
+.rodapezap {
+    position:fixed;
+    top: 85%;
+    left: 90%;
+    z-index: 1;
+
+    width: 60px;
+    height: 60px;
+    right: 40px;
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+.fa-whatsapp{
+
+    margin-top: 16px;
+ 
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color:blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 70px;
+    flex-wrap: wrap; 
+}
+
+nav .Logo{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none; /*tirar o sublinhado*/
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #e7442e;
+}
+nav .menu-btn i{
+    color: aqua;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 920px){
+    .logoBellya{
+        width:5%;
+        height:5%;
     }
-    
-    .introducao{
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: rgba(5, 5, 5, 0.863);
+        height: 100vh;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        font-size: 23px;
         text-align: left;
-        margin-left: 10%;
-        display: flex;
-    
     }
-    
-    .marketingimg{
-        margin-top: 20% !important;
-        margin-right: 150% !important;
-        width: 40% !important;
-        height: 40% !important;
-        text-align: center;
-        margin-left: 13%;
-      
+    nav ul li a.active,
+    nav ul li a:hover{
+        background: none;
+        color: #e7442e;
     }
-    .primeirotexto{
-        width: 400% !important;
-        font-size: 30px !important;
-        color: #BC8F72;
-        margin-left: 50% !important;
-        margin-top: 15%;
-        margin-bottom: 150% !important;
-        font-family: 'Noto Serif Lao', serif;
-    }
-    .segundotexto{
-        width: 300% !important;
-        font-size: 15px !important;
-        color:#F1F1F2;
-        font-family:'Arimo', serif;
-        text-align: justify;
-        margin-left: 50%;
-        margin-top: 10%;
-    }
-    .primeirobotao{
-        background-color: #060606;
-        color: #F1F1F2;
-        border-radius: 10px;
-        margin-top: 10% !important;
-        margin-left: 62%;
-        align-items: center;
-        width: 280% !important;
-        height: 10% !important;
-        margin-bottom: 30%;
-    }
-    .primeirobotao:hover{
-        background:  #BC8F72;
-    }
-    .botoes{
-        margin-left: 40%;
-        padding-bottom: 20% !important;
-        height: 100%;
-        align-items: baseline;
-    }
-    .redesocial{
-        flex-direction: row;
-        display: flex ;
-        justify-content: center;
-        align-items: flex-start !important;
-        margin-top: 5%;
-      
-    }
-    .linkfacebook{
-        margin: 5%;
-        margin-top: 5%;
-    }
-    .linkinstagram{
-        margin: 5%;
-    }
-    .facebook{
-        width: 20% !important;
-        height: 10% !important;
-        margin-left: 10%;
-        align-items: center;
-    
-    }
-    .instagram{
-        width: 20% !important;
-        height: 10% !important;
-        margin-left: 10%;
-        align-items: center;
-    }
-    .desenvolvimento{
-        text-align: left;
-        margin-left: 10%;
-        display: flex;
-        
-        
-    }
-    .terceirotexto{
-        align-items: center !important;
-        font-size: 25px;
-        color:#F1F1F2;
-        font-family:'Arimo', serif;
-        text-align: center;
-        margin-left: -6%;
-       
-    }
-    .trabalhoimg{
-        gap: 8px !important;
-        padding-bottom: 10%;
-        justify-content: baseline;
-        display: flex;
-        margin-left: 5% !important;
-        margin-top: 5%;
-      
-    }
-    .textoquemsou{
-        text-align: left;
-        align-content: center !important;
-        margin-left: -30% !important;
-        
-    }
-    .primpeiroparagrafo{
-        font-size: 20px !important;
-        color: #F1F1F2;
-        margin-top: 70% !important;
-        text-align: center;
-        padding-top: 10%;
-        margin-left: 8% !important;
-    }
-    .lais{
-        margin-top: 8%;
-        padding-bottom: 10%;
-        
-        
-    }
-    .direct{
-        margin-left: -20% !important;
-    }
-    .laisimg{
-        width: 400% !important;
-        margin-left: -16%;
-    }
-    .image{
-        width: 30% !important;
-        align-items: center !important;
-       
+    .carouselslide{
+        margin-left:0% !important;
+        margin-right:0% !important;
     }
     .rodape{
-        border-top: 0.4px solid #F1F1F2;
-        align-items: center;
-        justify-content: center;
+        left: 75%;
     }
-    .radapecontato{
-        margin-top: 2%;
-        font-size: 25px;
-        color:#F1F1F2;
-        font-family:'Arimo', serif;
-        text-align: center;
+    .rodapezap{
+        left: 75%;
     }
-    .rodapeimg{
-        gap: 10px;
-        padding-bottom: 10%;
-        justify-content: center;
-        display: flex;
-        margin-top: 2%;
-        z-index: 0;
+    .contato{
+        margin-left: 0% !important;
+        margin-right: 0% !important;
     }
-    .instagramrodape{
-        width: 30% !important;
-       
+    nav .Logo{
         
+        margin-left: -20%;
     }
-    .facebookrodape{
-        width: 30% !important;
+    .body{
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+    }
+    .estilo{ /*identificação da classe div de estilo*/
+        background-color:rgb(70, 94, 231); 
+        border-radius:0px; /*raio da borda*/
+        height: 100%;
+        right: 100%;
         
+                              
     }
-    .whatsaprodape{
-        width: 30% !important;
+    .fachada{
+        margin-top: 1%;
+        width: 120%;
+        
     }
     .marca{
         color: black; 
         margin-left:-20%;
         margin-right: 0% !important;
     }
-    .logoBellya{
-        width:5% !important;
-        height:5% !important;
-        text-align: center !important;
+    .valores{
+        flex-wrap: wrap;
+        width: 100%;
     }
-    .marcarodape{
-        background-color: gray;
-        text-align: center;
+    .produto{
+        width: 40% !important; 
     }
-}
-.direct{
-    margin-left: 0%;
-}
-.textoquemsou{
-    margin-top: 2%;
-}
-.cor{
-    background: linear-gradient(68.15deg, #BC8F72 20%, #e4c0a9be  80%); 
-}
-html{
-    scroll-behavior: smooth;
-}
-*{
-    padding: 0%;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-.logo{
-    margin-top: 2%;
-}
-.logoimg{
-    width: 70px;   
-}
-.menu{
-    display: flex;
-    gap: 40px;
-        
-}
-body{
-    background: linear-gradient(68.15deg, #4386b3 20%, #1f4864  80%); 
-}
-nav a{
-    color:#F1F1F2;
-    font-family: 'Noto Serif Lao', serif;
-    font-size: 20px;
-    
-}
-.navegacao{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    padding: 1%;
-    gap: 30%;
+    .departamento{
+        flex-wrap:wrap;
+                  
+    }
+    .pagina{
+    background: rgba(240, 237, 237, 0.925);
+    justify-content: center !important;
+     
+    }
+    .logo{
+        width: 90% !important;
+    }
+    .end{
+        margin-left: 7% !important;
+    }
+    .ender{
+        margin-left: -2.1% !important;
+    }
+    .margin{
+        font-size:100%;
+        padding: 7% !important;
+    }
 
 }
-
-.introducao{
-    text-align: left;
-    margin-left: 10%;
-    display: flex;
-
+.row{
+    --bs-gutter-x: 0rem !important;
+}
+.margin{
+    --bs-gutter-x: 0rem !important;
+    font-size:100%;
+    text-align:justify;
+    padding: 3% ;
+}
+.end{
+    text-align:left;
+    margin-top: -2%;
+    margin-left: 3.3%;
+}
+.ender{
+    text-align:left;
+    margin-left: -1%;
 }
 
-.marketingimg{
-    width: 40%;
-    margin-right: 13%;
-  
-}
-.primeirotexto{
-    font-size: 40px;
-    color: #BC8F72;
-    margin-top: 15%;
-    margin-bottom: 1%;
-    font-family: 'Noto Serif Lao', serif;
-}
-.segundotexto{
-    font-size: 25px;
-    color:#F1F1F2;
-    font-family:'Arimo', serif;
-    width: 80%;
-}
-.primeirobotao{
-    background-color: #060606;
-    color: #F1F1F2;
-    border-radius: 10px;
-    margin-top: 5%;
-    align-items: center;
-    width: 40%;
-    height: 8%;
-}
-a{
-    color: #F1F1F2;
-    font-size: 18px;
-}
-.primeirobotao:hover{
-    background:  #BC8F72;
-}
-.botoes{
-    height: 100%;
-    align-items: baseline;
-}
-.redesocial{
-    flex-direction: row;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-  
-}
-.linkfacebook{
-    margin: 5%;
-    margin-top: 5%;
-}
-.linkinstagram{
-    margin: 5%;
-}
-.facebook{
-    width: 5%;
-    margin-left: 10%;
-    align-items: center;
-
-}
-.instagram{
-    width: 5%;
-    margin-left: 5% ;
- 
-}
-.desenvolvimento{
-    text-align: left;
-    margin-left: 10%;
-    display: flex;
-    
-    
-}
-.terceirotexto{
-    font-size: 25px;
-    color:#F1F1F2;
-    font-family:'Arimo', serif;
-   
-}
-.trabalhoimg{
-    gap: 10px 30px;
-    padding-bottom: 10%;
-    justify-content: baseline;
-    display: flex;
-    margin-left: 30%;
-  
-}
-.primpeiroparagrafo{
-    font-size: 20px;
-    color: #F1F1F2;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    text-align: justify;
-    width: 80%;
-}
-.laisimg{
-    width: 60%;
-
-}
-.image{
-    width: 20%;
-}
-.rodape{
-    border-top: 0.4px solid #F1F1F2;
-    align-items: center;
-    justify-content: center;
-}
-.radapecontato{
-    margin-top: 2%;
-    font-size: 25px;
-    color:#F1F1F2;
-    font-family:'Arimo', serif;
+h1{ 
+    color: rgb(254, 219, 67);
     text-align: center;
-}
-.rodapeimg{
-    justify-content: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-align: center;
-}
-.instagramrodape{
-    width: 2%;
-   
     
 }
-.facebookrodape{
-    width: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    
-}
-.whatsaprodape{
-    width: 2%;
-}
+
 .marca{
     color: black; 
+    margin-left: -20%;
+    margin-right: -20%;
 }
-.marcarodape{
-    background-color: gray;
-    text-align: center;
+
+.fachada{
+    margin-top: 1%;
+    margin-left:-21.5%;
 }
-.logoBellya{
-    width:1.5%;
-    height:1.5%;
+
+.carouselslide{
+    margin-left:-21.5% ;
+    margin-right:-21.5% ;
 }
+
+.produtos{
+    display: flex; /*fica lado a lado*/
+    flex-wrap:wrap;  /*envolver em outras linhas*/ 
+    justify-content: space-around; /*distribuido ao redor */
+    
+    
+}
+
+.produto p{
+    background-color: #e7442e;
+    color: rgb(244, 247, 63);
+    padding: 5px;
+    font-weight: bold; /*letra em negrito*/
+    
+}
+
+.produto{
+    
+    margin-bottom: 20px; /*margin inferior*/
+    margin-right: 3px;
+    margin-top: 50px;
+    cursor: pointer; /*mudar o curso do mouse para uma mãozinha*/
+    height: 20%;
+    width: 20%;
+}
+
+.pagina{
+    background: rgba(240, 237, 237, 0.925);
+    justify-content: center !important;
+ 
+}
+.pagination{
+    justify-content: center;
+}
+
+
+
+
