@@ -4,224 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferragista Brothers</title>
+    <title>Lais Damas Marketing</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="BarraNavegacao.css" >
-    <link href="Bootstrap.css" rel="stylesheet" >
-    <script src="Bootstrap.js"></script>
-    
 </head>
+<body>
+    <header class="navegacao">
+        <img class="logoimg" src="logo.png" alt="Logo">
+        <nav class="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Quem Sou</a></li>
+            <li><a href="#contatos">Contato</a></li>
+        </nav>
+    </header>
 
-<nav class="fixed-top" style="position: absolute;">
-  <div class="Logo"><a href="#"><img src="logo1.jpg" alt="logomarca" style = "width:50px; height:50px; border-radius:180%;"></a></div>
-    <div class="menu-btn">
-      <i onclick="menuShow()"><img src="barras.png" width="40px" height="40px"></i> <!--detalhe do botão menu em formato sanduiche-->
-  </div>
+<main >
+    <section class="introducao">
+        <div class="direct" >
+            <h1 class="primeirotexto">Dê um UP na sua marca!</h1>
+            <h2 class="segundotexto">Para que sua marca tenha o reconhecimento que ela merece, precisa ser vista e para isso
+                 estamos aqui. Criamos a sua identidade na internet o melhor lugar para ser visto.</h2>
+                 <button class="primeirobotao"><a href="https://wa.me/message/TK2NJ66Q3LLOD1">Fale Conosco</a></button>
 
-  <ul>
-      <li> <a href="#" class="active">Iniciar</a></li>
-      <li> <a href="QuemSomos.html" >Quem Somos</a></li>
-      <li> <a href="catalago.html" >Catálogo</a></li>
-      
-  </ul>
-
-</nav>
-<!--fim do menu-->
-
-<body class="body"> 
-  
-        <h1 style="color:white; font-size: 300%; margin-top: 2%; padding-bottom: 1%;"><img class="logo" src="logo2.png" alt="logo" ></h1>
-    
-    <!--carousel de imagens-->
-    <div id="carouselExampleAutoplaying" class="carousel slide carouselslide" data-bs-ride="carousel" style="text-align:center;">
-        <!--inicios dos indicadores(botões inferior) -->
-        <div class="carousel-indicators" style>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" >
-            <!--imagem do carrosel, + tamanho da imagem, + a ocupação da imagem na tela-->
-            <img src="obj1.png" width="100%" alt="imagem1">
-            <div class="carousel-caption d-none d-md-block">
-            <!--
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="obj2.png" width="100%" alt="imagem2">
-            
-            <div class="carousel-caption d-none d-md-block">
-                <!--
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="obj3.png" width="100%" alt="imagem3" >
-            <div class="carousel-caption d-none d-md-block">
-                <!--
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="obj4.png" width="100%" alt="imagem4" >
-            <div class="carousel-caption d-none d-md-block">
-                <!--
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="obj5.jpeg" width="100%" alt="imagem5" >
-            <div class="carousel-caption d-none d-md-block">
-                <!--
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="obj6.png" width="100%" alt="imagem6" >
-            <div class="carousel-caption d-none d-md-block">
-                <!--
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>-->
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="obj7.jpg" width="100%" alt="imagem7" >
-            <div class="carousel-caption d-none d-md-block">
-                <!--
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>-->
-            </div>
-          </div>
-        </div>
-        <!--botões lateral dos carrosel-->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <!--fim dos botões-->
-      </div>
-    <!--fim carousel de imagens-->
-
-    <!-- início da sesão de departamentos-->
-    <section style="margin-top: 5%; display:flex; text-align:center;" class="departamento">
-      <div>
-        <a href="feramentas.html"> <img src="ferramenta.png" alt="" width="50%" height="70%"></a>
-        <p style="color: black;"><b>Ferramentas</b></p>
-      </div>
-      <div>
-       <a href="construção.html"><img src="construção.png" alt="" width="50%" height="70%"></a>
-        <p style="color: black;"><b>Construção</b></p>
-      </div>
-      <div>
-        <a href="eletricos.html"><img src="eletrico.png" alt="" width="50%" height="70%"></a>
-      <p style="color: black;"><b>Elétricos</b></p>
-    </div>
-    <div>
-      <a href="hidraulico.html" ><img src="hidraulico.png" alt="" width="50%" height="70%"></a>
-      <p style="color: black;"><b>Hidráulico</b></p>
-    </div>
-    <div>
-      <a href="pintura.html" ><img src="pintura.png" alt="" width="50%" height="70%"></a>
-      <p style="color: black;"><b>Pintura</b></p>
-    </div>
-   </section>
-
-   
-    <div style="text-align:center; color:black; padding:5px">
-      <a href="catalago.html"> <h3>Ver Mais</h1> </a> 
-    </div>
-    <!--fim da sessão de departamento-->
-
-    <section >
-      <h3 style="color:black; margin-top:50px; margin-bottom:50px; text-align:left;"><b>Nossos Parceiros</b></h3>
-      <div class="row" style="margin-bottom: 3%;" >
-        <div class="col-sm col-md col-xs col-lg">
-          <img src="avant-.png" alt="logo avant"width="50%" height="70%">
-        </div>
-        <div class="col-sm col-md col-xs col-lg">
-          <img src="fortlev.png" alt="logo fotlev"width="50%" height="70%">
-        </div>
-        <div class="col-sm  col-md col-xs col-lg">
-          <img src="lorenzeti.png" alt="logo lorezentti"width="50%" height="70%">
-        </div>
-        <div class="col-sm col-md col-xs col-lg"> 
-          <img src="luztol.png" alt="logo luztol"width="50%" height="70%">
-        </div>
-        <div class="col-sm col-md col-xs col-lg">
-          <img src="vonder.png" alt="logo vonder"width="50%" height="70%">
-        </div>
-        
-      </div>
-
+        <img class="marketingimg" src="marketing.png" alt="Marketing">
     </section>
+    <div class="cor">
+        <section class="desenvolvimento">
+            <div class="lais">
+                <img class="laisimg" src="lais.png" alt="Lais">
+            </div>
+            
+            <div class="textoquemsou">
+                <h1 class="terceirotexto" id="sobre">Quem Sou</h1>
+                <p class="primpeiroparagrafo"> A minha empresa de Social Media, é responsável pela gestão dos perfis nas redes sociais.
+                    Vamos além da criação e publicação de conteúdo online, abrangendo o desenvolvimento de uma boa estratégia,
+                    que exige uma pesquisa profunda do seu nicho e análise de mercado e atualização constante.</p>            
+            </div>                      
+        </section>
+        <div class="trabalhoimg">
+            <img class="image" src="trabalho1.jpeg" alt="Identidade Visual">
+            <img class="image"  src="trabalho2.jpeg" alt="Identidade Visual">
+            <img class="image"  src="trabalho3.jpeg" alt="Identidade Visual">
+        </div>
+    </div>
+    
+    <footer class="rodape">
+        <h1 class="radapecontato" id="contatos">Contato</h1>
+        <div class="rodapeimg">
+            <a href="https://www.instagram.com/laisdamasm/" target="_blank" rel="external"><img class="instagramrodape" src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/lais.damascarvalho" target="_blank" rel="external"><img class="facebookrodape" src="facebook.png" alt="Facebook"></a>
+            <a href="https://wa.me/message/TK2NJ66Q3LLOD1" target="_blank" rel="external"><img class="whatsaprodape" src="whatsap.png" alt="Whatsap"></a>
+        </div>
 
+    </footer>   
+    <hr class="marca"> 
+    <div class="marcarodape">
+        <p style="color:rgb(58, 57, 57)"> <img src="logobellya.png" alt="" class="logoBellya">2023.  Béllya Technology</p>
+    </div>
+</main>
 </body>
-
- <!--inicio da caixa de contato-->   
-  <div class="contato row estilo">
-   <div id="contato">
-      <h2>Contato</h2>
-    </div>
-    <div class="col-sm-4 col-md-5" style="font-size:100%">
-      <h4 style="text-align:left">Atendimento</h4>
-        <p style="text-align:left" ><img src="relogio.png" alt="" width="20px"> <b>Horário de atendimento:</b></p> 
-        <p class="end" >Das 07h às 19h de segunda a sabádo <br>Das 07h às 13h no Domingo </p>
-        <p style="text-align:left" ><img src="telefone.png" alt="" width="20px"> <b>Telefone:</b> (62) 3280-1427</p>
-        <p class="ender" ><img src="localização.png" alt="" width="30px"> <b>Endereço:</b> Avenida Brasil Qd.28 Lt.09 sala 03 </p>
-        <p class="end"> Jd. Belo Horizonte, Aparecida de Goiânia, GO, Brasil</p>
-        <p class="ender"><img src="carta.png" alt="" width="30px"> <b>Email:</b> ferragistabrothers@yahoo.com</p>
-    </div>
-<!--inicio da caixa de rede social e imagem e link-->
-    <div style="align-self:flex-end; padding:0%" class="col-sm-2 col-md-2 ">  
-      <h4><b>Siga nossas Rede Sociais</b></h4>
-        <a href="https://www.facebook.com/profile.php?id=100063855491737&sk=about" target="_blank" rel="external"><img src="facebook.png" alt="facebook" style="width: 50px; height:50px"></a>
-        <a href="https://www.instagram.com/ferragistabrothers/" target="_blank" rel="external"><img src="instagram.png" alt="instagram" style="width: 40px; height:40px"></a>
-    </div>
-<!--imagem  e link de rede social e fim da caixa de rede social-->
-    <div class="col-sm-6 col-md-5" >
-        <a href="https://www.google.com/maps/place/Ferragista+Brothers/@-16.8269873,-49.252229,17z/data=!3m1!4b1!4m5!3m4!1s0x935efdcfebc85a31:0x5bd6cda7e1b8d98a!8m2!3d-16.8269796!4d-49.2501043"
-          target="_blank" rel="external"><img src="localizaçãoloja.PNG" alt="" style="width:100%; height:90%; margin-top:5%; margin-bottom:5%; border-radius:10px"></a>  
-    </div>
-  </div>
-<!--fim da caixa de contato-->
-
-<!--botão voltar ao topo-->
-<div>
-  <a class="rodape" href="#">
-    <img src="seta.png" alt="imagemvoltaaotopo" style="width: 55px; height:55px; border-radius: 50%; margin-left:-210%; margin-bottom:50%">
-  </a>
-</div>
-<!--fim do botão voltar ao topo-->
-
-<!--inicio botão whatsapp-->
-<div>
-  <a class="rodapezap" href="https://wa.me/message/LYAJ6RC6ULORG1" target="_blank" rel="external">
-    <img src="whatsapp.png" alt="whatsapp" style="width: 55px; height:55px; border-radius: 50%;">
-  </a>
-</div>
-<!--fim do botão whatsapp--> 
-
-<!--início do rodape da marca-->
-<hr class="marca"> 
-<div style="color:gray;">
-  <p> <img src="logobellya.png" alt="" class="logoBellya">2023.  Béllya Technology</p>
-</div>
-<!--fim do radape da marca-->
-
-<script src="javascript.js"></script>
 </html>
